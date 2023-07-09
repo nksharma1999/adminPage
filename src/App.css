@@ -1,0 +1,62 @@
+
+.mobilevsidebarP{
+  height: 20vh;
+  margin-bottom: 20px;
+  /* margin: 10px auto; */
+  /* padding: 10px auto; */
+  /* position: absolute; */
+  /* background-color: brown; */
+  /* z-index: 2; */
+  /* display: block; */
+}
+
+.logo{
+  padding-top: 10px;
+  font-style: oblique;
+  color: white;
+}
+.sidebar-list{
+  margin-top: 10px;
+}
+.list-group-item{
+  background-color: white;
+}
+
+
+.card{
+  padding: 10px 20px;
+  width: 250px
+  /* height: 20px; */
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .card{
+    padding: 10px 20px;
+    width: 100%;
+    /* height: 20px; */
+  }
+  #sidebar{
+    display: none;
+  }
+  .mobilevsidebarP{
+    display: contents;
+  }
+  #desktopIcon{
+    display: none;
+  }
+  
+}
+@media screen and (min-width: 700px) {
+  #mobileIcon{
+    display: none;
+  }
+  #sidebar{
+    display:contents;
+  }
+  .mobilevsidebarP{
+    display: none;
+  }
+}
